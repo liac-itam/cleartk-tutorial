@@ -35,6 +35,11 @@
         </dependency>
         <dependency>
             <groupId>org.cleartk</groupId>
+            <artifactId>cleartk-opennlp-tools</artifactId>
+            <version>${cleartk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.cleartk</groupId>
             <artifactId>cleartk-eval</artifactId>
             <version>${cleartk.version}</version>
         </dependency>
@@ -48,6 +53,26 @@
             <artifactId>cleartk-util</artifactId>
             <version>${cleartk.version}</version>
         </dependency>
+        <!-- Para NER: opciones de linea de comandos -->
+        <dependency>
+            <groupId>com.lexicalscope.jewelcli</groupId>
+            <artifactId>jewelcli</artifactId>
+            <version>0.8.9</version>
+        </dependency>
+        <!-- Manejo de XML y DOMs -->
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom2</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+
+        <!-- MALLET en ClearTK -->
+        <dependency>
+            <groupId>org.cleartk</groupId>
+            <artifactId>cleartk-ml-mallet</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>
