@@ -16,7 +16,13 @@ public interface Options
 
     @Option(
             longName = "text-file",
-            description = "The file to label with named entities",
+            description = "The file to label with named entities.",
+            defaultValue = "data/sample/2008_Sichuan_earthquake.txt")
+    public File getTextFile();
+
+    @Option(
+            longName = "train-dir",
+            description = "The directory containing MASC-annotated files",
             defaultValue = "data/MASC-1.0.3/data/written")
     public File getTrainDirectory();
 }
